@@ -1,0 +1,49 @@
+{
+    "name": "@skit/doctitle",
+    "title": "title.js",
+    "description": "An easy way to dynamically change the document title, compatible with SPA in iOS/Safari, and support fixed prefixes and suffixes. 一种动态修改文档标题的简便方式，兼容 iOS/Safari 中的 SPA，支持固定前缀、后缀。",
+    "keywords": [
+        "document title",
+        "page title",
+        "title",
+        "spa"
+    ],
+    "version": "1.0.0-rc",
+    "main": "dist/index.min.js",
+    "author": "Fu Diwei",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fudiwei/skit-doctitle.js.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "npm run build:umd && npm run build:min",
+        "build:umd": "webpack --config build/webpack.config.umd.js",
+        "build:min": "webpack --config build/webpack.config.min.js"
+    },
+    "typings": "types/index.d.ts",
+    "files": [
+        "dist/*",
+        "types/*"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/plugin-transform-runtime": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "@babel/runtime": "^7.15.4",
+        "@babel/runtime-corejs3": "^7.15.4",
+        "@typescript-eslint/eslint-plugin": "^5.2.0",
+        "@typescript-eslint/parser": "^5.2.0",
+        "babel-loader": "^8.2.3",
+        "core-js": "^3.19.0",
+        "eslint": "^7.32.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "eslint-plugin-standard": "^5.0.0",
+        "prettier": "^2.4.1",
+        "webpack": "^5.60.0",
+        "webpack-cli": "^4.9.1"
+    }
+}
