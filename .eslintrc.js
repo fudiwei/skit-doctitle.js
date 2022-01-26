@@ -5,23 +5,9 @@ module.exports = {
         commonjs: true,
         amd: true
     },
-    extends: ['eslint:recommended'],
-    globals: {
-        wx: true,
-        my: true,
-        swan: true,
-        tt: true
-    },
-    overrides: [
-        {
-            files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
-            env: {
-                mocha: true
-            }
-        }
-    ],
+    extends: ['eslint:recommended', 'plugin:prettier/recommended'],
     parserOptions: {
-        ecmaVersion: 6,
+        ecmaVersion: 2015,
         parser: '@typescript-eslint/parser',
         sourceType: 'module'
     },
@@ -33,10 +19,6 @@ module.exports = {
         'no-extra-boolean-cast': 'off',
         'prettier/prettier': ['warn', { trailingComma: 'none' }],
         'quotes': ['error', 'single'],
-        'semi': ['error', 'always'],
-        '@typescript-eslint/ban-ts-comment': 'warn',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/indent': 'off',
-        '@typescript-eslint/no-non-null-assertion': 'off'
+        'semi': ['error', 'always']
     }
 };
